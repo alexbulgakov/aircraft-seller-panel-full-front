@@ -1,8 +1,8 @@
 {
   "name": "goods-table",
   "version": "1.0.0",
+  "main": "appEntry.tsx",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --open --mode development"
@@ -31,6 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
@@ -39,6 +40,7 @@
     "eslint-webpack-plugin": "^4.1.0",
     "prettier": "^3.2.5",
     "react-refresh": "^0.14.0",
+    "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.3",
     "webpack": "^5.91.0",
@@ -46,6 +48,8 @@
     "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
+    "@vkontakte/icons": "^2.104.0",
+    "@vkontakte/vkui": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

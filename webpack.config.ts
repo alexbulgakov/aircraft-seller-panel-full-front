@@ -5,7 +5,7 @@ import ESLintPlugin from 'eslint-webpack-plugin'
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.tsx'),
+  entry: path.resolve(__dirname, './src/app/appEntry.tsx'),
   mode: isDevelopment ? 'development' : 'production',
   module: {
     rules: [
@@ -21,13 +21,17 @@ module.exports = {
           },
         ],
       },
+      {        
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [isDevelopment && new ReactRefreshWebpackPlugin(), new ESLintPlugin({
     extensions: ['.js', '.jsx'],
   }),].filter(Boolean),
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.css', '.js', '.jsx', '.ts', '.tsx'],
   },
   output: {
     path: path.resolve(__dirname, './dist'),
