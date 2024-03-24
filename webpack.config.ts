@@ -1,5 +1,6 @@
-const path = require('path');
+import path from 'path';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+import ESLintPlugin from 'eslint-webpack-plugin'
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -22,7 +23,9 @@ module.exports = {
       },
     ],
   },
-  plugins: [isDevelopment && new ReactRefreshWebpackPlugin()].filter(Boolean),
+  plugins: [isDevelopment && new ReactRefreshWebpackPlugin(), new ESLintPlugin({
+    extensions: ['.js', '.jsx'],
+  }),].filter(Boolean),
   resolve: {
     extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
   },

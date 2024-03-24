@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'
 
-const title = 'React с Webpack и Babel';
+const title = 'React с Webpack и Babel'
 
-const root = ReactDOM.createRoot(document.getElementById('app'));
-root.render(<h1>{title}</h1>);
+const root = ReactDOM.createRoot(document.getElementById('app'))
+root.render(<h1>{title}</h1>)
