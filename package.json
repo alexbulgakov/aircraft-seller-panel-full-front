@@ -1,0 +1,19 @@
+{
+  "name": "goods-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbulgakov/goods-table.git"
+  },
+  "author": "Aleksei Bulgakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexbulgakov/goods-table/issues"
+  },
+  "homepage": "https://github.com/alexbulgakov/goods-table#readme"
+}
