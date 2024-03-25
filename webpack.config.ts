@@ -32,6 +32,7 @@ module.exports = {
   }),].filter(Boolean),
   resolve: {
     extensions: ['.css', '.js', '.jsx', '.ts', '.tsx'],
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
   },
   output: {
     path: path.resolve(__dirname, './dist'),
